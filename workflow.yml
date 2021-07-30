@@ -1,0 +1,8 @@
+- name: Test Start Shortcut
+  run: |
+    $start = [System.Environment]::GetFolderPath('StartMenu')
+    Invoke-Item "$start\Programs\Spack\Spack Package Manager.lnk"
+- name: Test Desktop Shortcun
+  run: |
+    $desktop = [System.Environment]::GetFolderPath('Desktop')
+    Invoke-Item "$desktop\Programs\Spack\Spack Package Manager.lnk"

@@ -1,0 +1,17 @@
+branches:
+  master:
+    checks:
+      project_check_release:
+        kind: changelog
+        config:
+          style: file
+          path: origin/kwiver/docs/release...
+          required: False
+  release:
+    checks:
+      project_check_release:
+        kind: changelog/topic
+        config:
+          style: file
+          path: origin/kwiver/docs/release...
+          required: False
